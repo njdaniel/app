@@ -10,6 +10,14 @@ The first thing you need to do is open up the "database.yml" file and edit it to
 
 You will also need to make sure that **you** start/install the database of your choice. Buffalo **won't** install and start postgres for you.
 
+### Start Postgres
+
+Using postgres on docker using docs [https://hub.docker.com/_/postgres/]
+
+    $ docker run --name postgres -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 postgres
+
+
+
 ### Create Your Databases
 
 Ok, so you've edited the "database.yml" file and started postgres, now Buffalo can create the databases in that file for you:
